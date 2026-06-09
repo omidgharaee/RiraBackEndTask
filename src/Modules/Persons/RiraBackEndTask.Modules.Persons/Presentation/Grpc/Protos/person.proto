@@ -1,0 +1,64 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "RiraBackEndTask.Modules.Persons.Presentation.Grpc.Protos";
+
+package persons;
+
+service PersonService {
+  rpc CreatePerson (CreatePersonGrpcRequest) returns (CreatePersonGrpcResponse);
+  rpc GetPersonById (GetPersonByIdGrpcRequest) returns (PersonGrpcDto);
+  rpc GetPersons (GetPersonsGrpcRequest) returns (GetPersonsGrpcResponse);
+  rpc UpdatePerson (UpdatePersonGrpcRequest) returns (UpdatePersonGrpcResponse);
+  rpc DeletePerson (DeletePersonGrpcRequest) returns (DeletePersonGrpcResponse);
+}
+
+message CreatePersonGrpcRequest {
+  string first_name = 1;
+  string last_name = 2;
+  string national_code = 3;
+  string birth_date = 4;
+}
+
+message CreatePersonGrpcResponse {
+  string id = 1;
+  string message = 2;
+}
+
+message GetPersonByIdGrpcRequest {
+  string id = 1;
+}
+
+message GetPersonsGrpcRequest {
+}
+
+message GetPersonsGrpcResponse {
+  repeated PersonGrpcDto persons = 1;
+}
+
+message UpdatePersonGrpcRequest {
+  string id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string national_code = 4;
+  string birth_date = 5;
+}
+
+message UpdatePersonGrpcResponse {
+  string message = 1;
+}
+
+message DeletePersonGrpcRequest {
+  string id = 1;
+}
+
+message DeletePersonGrpcResponse {
+  string message = 1;
+}
+
+message PersonGrpcDto {
+  string id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  string national_code = 4;
+  string birth_date = 5;
+}

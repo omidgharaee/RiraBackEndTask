@@ -1,0 +1,1 @@
+dotnet ef migrations add InitialMigration --project src/Modules/Persons/RiraBackEndTask.Modules.Persons --startup-project src/Host/RiraBackEndTask.Api --context PersonsDbContext --output-dir Persistence/Migrations

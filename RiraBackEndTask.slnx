@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/RiraBackEndTask.SharedKernel/RiraBackEndTask.SharedKernel.csproj" Id="aef5f948-0c48-4dba-88a4-cbef21bd08d4" />
+  </Folder>
+  <Folder Name="/src/Host/">
+    <Project Path="src/Host/RiraBackEndTask.Api/RiraBackEndTask.Api.csproj" Id="53cfa98e-eed8-40ce-8e83-0723c24f45d7" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Persons/">
+    <Project Path="src/Modules/Persons/RiraBackEndTask.Modules.Persons/RiraBackEndTask.Modules.Persons.csproj" Id="3f9b2fe1-5611-4e99-9d7e-2d8206babc5b" />
+  </Folder>
+</Solution>
