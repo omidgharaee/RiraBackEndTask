@@ -11,7 +11,6 @@ public sealed class Person : BaseEntity
     {
     }
 
-
     private Person(
         string firstName,
         string lastName,
